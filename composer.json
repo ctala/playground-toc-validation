@@ -1,0 +1,21 @@
+{
+    "name": "ctala/playground-toc-validation",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cristian Tala S.",
+            "email": "yomismo@cristiantala.cl"
+        }
+    ],
+    "require": {
+        "symfony/dotenv": "^5.1",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "classes",
+            "Models\\" : "models"
+        }
+    }
+}
