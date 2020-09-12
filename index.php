@@ -90,8 +90,8 @@ $session_id = $_SESSION['session_id'];
         Prueba de Flujo de TOC
     </div>
     <div class="card-body">
-        <h5 class="card-title"><?= $session_id ?></h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">Id Sesión utilizado : <?= $session_id ?></h5>
+        <p class="card-text">Ejemplo burdo de como implementar la validación de TOC. Después de cada etapa haz click en siguiente.</p>
 
     </div>
 
@@ -164,7 +164,6 @@ $session_id = $_SESSION['session_id'];
                 case "finish" :
                 {
                     include_once("_result.php");
-                    echo "</pre>";
                     break;
                 }
                 default:
