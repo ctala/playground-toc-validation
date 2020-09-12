@@ -163,10 +163,9 @@ $session_id = $_SESSION['session_id'];
                 }
                 case "finish" :
                 {
-                    $result = $toc->checkResult($_SESSION["token-front"], $_SESSION["token-back"], $_SESSION["token-liveness"]);
-                    echo "<pre>";
-                    print_r($result);
+                    include_once("_result.php");
                     echo "</pre>";
+                    break;
                 }
                 default:
                 {
