@@ -3,18 +3,18 @@ $result = $toc->checkResult($_SESSION["token-front"], $_SESSION["token-back"], $
 ?>
 <div>
 
-    <div class="card border-success mb-3" style="width: 20rem;">
+    <div class="card border-success mb-3" style="width: 100%;">
         <div class="card-body text-success">
             <h5 class="card-title">Resultado</h5>
             <p class="card-text">
-            <pre><code>
+            <pre>
                     <?php
 
                     print_r($result);
                     ?>
                 </code>
 
-            </pre></p>
+            </p>
         </div>
     </div>
 
