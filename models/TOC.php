@@ -88,9 +88,8 @@ class TOC
         ));
 
         $response = curl_exec($curl);
-
         curl_close($curl);
-        echo json_decode($response);
+        return $response;
     }
 
 }
