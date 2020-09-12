@@ -9,10 +9,9 @@ $result = $toc->checkResult($_SESSION["token-front"], $_SESSION["token-back"], $
             <p class="card-text">
             <pre>
                     <?php
-
-                    print_r($result);
+                    print_r(json_encode($result));
                     ?>
-                </code>
+                </pre>
 
             </p>
         </div>
