@@ -43,7 +43,7 @@ class TOC
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => "POST",
-            CURLOPT_POSTFIELDS => "{\"apiKey\":\"$this->_apiKey\",\"liveness\":true,\"autocapture\":true}",
+            CURLOPT_POSTFIELDS => "{\"apiKey\":\"$this->_apiKey\",\"liveness\":true,\"autocapture\":true, \"fake_detector\": true}",
             CURLOPT_HTTPHEADER => array(
                 "Content-Type: application/json"
             ),

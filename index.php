@@ -1,15 +1,23 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
+
+use Symfony\Component\Dotenv\Dotenv;
 use Models\TOC;
 
 //Iniciamos sesión. La usaremos para mantener la etapa y el estado.
 session_start();
 
-use Symfony\Component\Dotenv\Dotenv;
 
-$dotenv = new Dotenv();
-$dotenv->load(__DIR__ . '/.env');
+
+if (file_exists("./env")) {
+    echo "El .ENV existe";
+    $dotenv = new Dotenv();
+    $dotenv->load(__DIR__ . '/.env');
+} else {
+    echo "El fichero .ENV no existe";
+}
+
 
 //Etapa en la que va el proceso.
 $stage = $_GET["stage"];

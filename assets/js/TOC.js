@@ -9,6 +9,7 @@ function tocCapture(session_id, document_side, div, document_type = "CHL2") {
     TOCautocapture(div, {
             locale: "es",
             session_id: session_id,
+            fake_detector: true,
             document_type: document_type,
             document_side: document_side,
             callback: function (captured_token, image) {
@@ -25,6 +26,7 @@ function tocCapture(session_id, document_side, div, document_type = "CHL2") {
 function tocLiveness(session_id) {
     TOCliveness('liveness', {
             locale: "es",
+            liveness_passive: true,
             session_id: session_id,
             callback: function (token) {
                 alert(token);
