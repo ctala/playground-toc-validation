@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f9ccba3-4f06-4a40-8b06-63de737d15ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/TOC.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/TOC.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/TOC.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/TOC.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599929109691</updated>
       <workItem from="1599929110999" duration="17264000" />
-      <workItem from="1600104299334" duration="1454000" />
+      <workItem from="1600104299334" duration="1603000" />
     </task>
     <servers />
   </component>

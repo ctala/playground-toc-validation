@@ -13,8 +13,8 @@ class TOC
      */
     public function __construct()
     {
-        $this->_apiKey = $_ENV['API_KEY'];
-        $this->_url = $_ENV['TOC_URL'];
+        $this->_apiKey = getenv('API_KEY');
+        $this->_url = getenv('TOC_URL');
     }
 
 
