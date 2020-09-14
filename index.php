@@ -9,15 +9,14 @@ use Models\TOC;
 session_start();
 
 
-
-if (file_exists("./env")) {
-    echo "El .ENV existe";
+/**
+ * Solo cargamos el archivo .env si es que existe.
+ * Si no existe se deben de usar las variables del servidor.
+ */
+if (file_exists(".env")) {
     $dotenv = new Dotenv();
     $dotenv->load(__DIR__ . '/.env');
-} else {
-    echo "El fichero .ENV no existe";
 }
-
 
 //Etapa en la que va el proceso.
 $stage = $_GET["stage"];
@@ -32,8 +31,6 @@ $toc = new TOC();
  * Manejamos la sesión para que dure 15 minutos. Tiempo que dura la sesión de TOC.
  * Creamos la sesión en TOC al iniciar y al renovar.
  */
-
-
 if (!isset($_SESSION['created_at'])) {
     $_SESSION['created_at'] = time();
     $_SESSION['session_id'] = $toc->generateSessionId();

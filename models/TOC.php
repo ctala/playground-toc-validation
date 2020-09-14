@@ -13,8 +13,8 @@ class TOC
      */
     public function __construct()
     {
-        $this->_apiKey = getenv('API_KEY');
-        $this->_url = getenv('TOC_URL');
+        $this->_apiKey = $_ENV['API_KEY'];
+        $this->_url = $_ENV['TOC_URL'];
     }
 
 
@@ -83,7 +83,8 @@ class TOC
                 'id_back' => $id_back,
                 'selfie' => $selfie,
                 'documentType' => $documentType,
-                'apiKey' => $this->_apiKey
+                'apiKey' => $this->_apiKey,
+                "liveness_passive" => true
             ),
         ));
 
